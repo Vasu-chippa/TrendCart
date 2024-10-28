@@ -29,6 +29,12 @@ body{
 .logo{
   height: 70px;
   width: 70px;
+  border-radius: 50%;
+  background-size:auto;
+}
+.logo:hover{
+  width: 100px;
+  height: 100px;
 }
 #navbar{
   display: flex;
@@ -62,7 +68,13 @@ body{
   left: 20px;
 
 }
-
+.bg {
+  padding-left: 800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 20px;
+}
 h1 {
   font-size: 50px;
   line-height: 64px;
@@ -130,9 +142,18 @@ button.normal {
 }
 #hero  h4{
   padding-bottom: 15px;
+  font-size: 30px;
+  color: #34d939;
+  font-family:'Times New Roman', Times, serif;
 }
 #hero h1{
   color: aqua;
+
+}
+#hero p{
+  color: rgb(89, 0, 255);
+  font-style: italic;
+  font-size: 20px;
 }
 #hero button{
   background-image: url('img/button.png');
@@ -303,7 +324,7 @@ button.normal {
   background-image: url('img/banner/b18.jpg');
   background-size:contain;
   width: 50%;
-  height: 60vh;
+  height: 77vh;
   background-size: cover;
   background-position: center;
   padding: 30px 20px;
@@ -341,17 +362,21 @@ button.normal {
 }
 #sm-banner .white{
   text-align: center;
-  padding-top: 20px;
+  padding: 10px 10px 10px 10px;
   color: #26d2f4;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 19px;
+  border-radius: 30%;
 }
 #banner3 .white{
   width: 150px;
   height: 60px;
+  border-radius: 20%;
+  padding: 10px 10px 10px 10px;
 }
 .white:hover{
   background-color: rgb(26, 223, 68);
+  color: red;
 }
 .t-span{
   font-size: 20px;
@@ -419,7 +444,6 @@ button.normal {
   font-weight: 800;
 
 }
-
 
 #newsletter form{
   display: flex;
@@ -759,6 +783,7 @@ footer a:hover{
   
 }
 
+
 #form-details{
   display: flex;
   justify-content: space-between;
@@ -773,6 +798,26 @@ footer a:hover{
   flex-direction: column;
   align-items: flex-start;
 }
+
+#form-details .people img{
+  height: 100px;
+  width: 130px;
+  border-radius: 50%;
+  background-position: center;
+}
+
+#form-details .people p{
+  font-family:cursive;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.people{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 #form-details form input,
 #form-details form textarea{
   width: 100%;
@@ -903,26 +948,27 @@ footer a:hover{
   }
   #navbar{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content:space-around;
     position: fixed;
     top: 0;
     right: 0px;
-    height: 100vh;
-    width: -300px;
     background-color: #f0f0f0;
-    box-shadow: 0 40px 60px rgba(0,0,0);
+    /* box-shadow: 0 40px 60px rgba(0,0,0); */
     padding: 80px 0 0 10px;
+    height: 100px;
+    width: 75%;
 
   }
   #navbar .active{
     right: 0px;
   }
   #navbar li{
-    margin-bottom: 25px;
+    /* margin-bottom: 25px; */
+    padding-bottom: 10px;
   }
-  #mobile{
+  /* #mobile{
     display: flex;
     align-items: center;
   }
@@ -933,8 +979,8 @@ footer a:hover{
     color: #000000;
     font-size: 24px;
     padding-left: 20px;
-  }
-  #close {
+  } */
+  /* #close {
     position: absolute;
     top: 30px;
     left: 30px;
@@ -944,7 +990,7 @@ footer a:hover{
   }
   #lg-bag{
     display: none;
-  }
+  } */
   #hero{
     height: 70vh;
     padding: 0 80px;
