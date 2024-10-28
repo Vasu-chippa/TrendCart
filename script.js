@@ -13,3 +13,7 @@ if (close){
         nav.classList.remove('active')
     })
 }
+const ProceedToBuy = document.getElementById("ProceedToBuy");
+ProceedToBuy.addEventListener('click', () => {
+    window.alert("Successfully Buy the Product ! ");
+})
